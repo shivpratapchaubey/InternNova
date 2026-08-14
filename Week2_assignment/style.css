@@ -1,0 +1,1495 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Class Selector */
+.highlight {
+    color: blue;
+}
+
+/* ID Selector */
+#main-heading {
+    text-align: center;
+}
+
+/* Background */
+section {
+    background-color: white;
+}
+
+/* Font Styling */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+
+    margin: 30px auto;
+    padding: 25px;
+
+    border: 2px solid black;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.grid-item {
+    padding: 30px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* Desktop */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+}
+
+/* =========================
+   Universal Selector
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   Body
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef4ff;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 20px;
+    color: #dbeafe;
+}
+
+/* =========================
+   Navigation
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #172554;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* =========================
+   Main
+   ========================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 12px;
+
+    border: 1px solid #dbeafe;
+
+    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.12);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #1d4ed8;
+}
+
+/* =========================
+   Hero Section
+   ========================= */
+
+.hero {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 40px;
+
+    background-color: #dbeafe;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    color: #1e3a8a;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #334155;
+}
+
+/* =========================
+   Button
+   ========================= */
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+/* =========================
+   Image
+   ========================= */
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 6px solid white;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================
+   Cards
+   ========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+
+    background-color: #eff6ff;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 10px rgba(30, 64, 175, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #2563eb;
+}
+
+.card p {
+    color: #475569;
+}
+
+.card:hover {
+    background-color: #dbeafe;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    text-align: center;
+
+    background-color: #172554;
+
+    color: white;
+
+    padding: 25px;
+
+    margin-top: 30px;
+}
+
+footer p {
+    color: #dbeafe;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section {
+        padding: 25px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 25px 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    /* Mobile Navigation */
+
+    nav {
+        flex-direction: column;
+
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 20px;
+
+        margin: 20px 0;
+    }
+
+    /* Mobile Hero */
+
+    .hero {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 25px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    /* Mobile Image */
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* Mobile Cards */
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   Universal Selector
+   ========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   Body
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #eef4ff;
+
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+    width: 100%;
+    height: 180px;
+
+    background-color: #1d4ed8;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+    border-bottom: 5px solid #172554;
+}
+
+header h1 {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+
+    color: #dbeafe;
+}
+
+
+/* =========================
+   Main Container
+   ========================= */
+
+main {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 30px auto;
+
+    padding: 10px;
+}
+
+
+/* =========================
+   Common Sections
+   ========================= */
+
+section {
+    background-color: white;
+
+    margin: 30px 0;
+
+    padding: 30px;
+
+    border: 1px solid #bfdbfe;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.12);
+}
+
+section h2 {
+    color: #1d4ed8;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Introduction
+   ========================= */
+
+.intro {
+    text-align: center;
+
+    min-height: 180px;
+}
+
+.intro p {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding: 15px;
+}
+
+
+/* =========================
+   Box Model Demonstration
+   ========================= */
+
+.box-demo {
+    text-align: center;
+}
+
+
+/*
+    This is the main Box Model example.
+*/
+
+.model-box {
+
+    /* Width */
+    width: 500px;
+
+    /* Height */
+    height: 250px;
+
+    /* Margin */
+    margin: 30px auto;
+
+    /* Padding */
+    padding: 40px;
+
+    /* Border */
+    border: 5px solid #2563eb;
+
+    /* Rounded Corners */
+    border-radius: 20px;
+
+    /* Shadow */
+    box-shadow: 0 10px 25px rgba(30, 64, 175, 0.25);
+
+    /* Content Alignment */
+    text-align: center;
+
+    background-color: #dbeafe;
+}
+
+.model-box h3 {
+    color: #1e3a8a;
+
+    margin-bottom: 15px;
+}
+
+.model-box p {
+    color: #334155;
+}
+
+
+/* =========================
+   Student Cards
+   ========================= */
+
+.student-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    margin-top: 25px;
+}
+
+
+.student-card {
+
+    width: 30%;
+
+    min-height: 220px;
+
+    padding: 25px;
+
+    margin: 10px;
+
+    background-color: #eff6ff;
+
+    border: 2px solid #bfdbfe;
+
+    border-radius: 15px;
+
+    box-shadow: 0 6px 15px rgba(30, 64, 175, 0.15);
+
+    text-align: center;
+}
+
+.student-card h3 {
+
+    color: #2563eb;
+
+    margin-bottom: 15px;
+}
+
+.student-card p {
+
+    margin-bottom: 20px;
+
+    color: #475569;
+}
+
+
+/* =========================
+   Button
+   ========================= */
+
+button {
+
+    padding: 10px 20px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+button:hover {
+
+    background-color: #1e40af;
+}
+
+
+/* =========================
+   Properties Section
+   ========================= */
+
+.properties {
+
+    background-color: #dbeafe;
+
+    padding: 30px 40px;
+}
+
+.properties ul {
+
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    padding: 10px 20px;
+}
+
+.properties li {
+
+    margin-bottom: 12px;
+
+    padding: 8px;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+
+    width: 100%;
+
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+footer p {
+
+    margin: 5px;
+}
+
+
+/* =========================
+   Tablet Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+
+    header {
+
+        height: auto;
+
+        padding: 35px 20px;
+    }
+
+    header h1 {
+
+        font-size: 32px;
+    }
+
+    main {
+
+        width: 94%;
+    }
+
+    section {
+
+        padding: 25px;
+    }
+
+    .model-box {
+
+        width: 90%;
+
+        height: auto;
+
+        padding: 30px;
+    }
+
+    .student-container {
+
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+    .student-card {
+
+        width: 45%;
+
+        margin: 5px;
+    }
+}
+
+
+/* =========================
+   Mobile Responsive
+   ========================= */
+
+@media (max-width: 480px) {
+
+    header h1 {
+
+        font-size: 26px;
+    }
+
+    header p {
+
+        font-size: 16px;
+    }
+
+    main {
+
+        width: 96%;
+
+        padding: 5px;
+    }
+
+    section {
+
+        padding: 20px;
+
+        margin: 20px 0;
+    }
+
+    .model-box {
+
+        width: 100%;
+
+        height: auto;
+
+        padding: 20px;
+
+        margin: 20px auto;
+    }
+
+    .student-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .student-card {
+
+        width: 100%;
+
+        margin: 10px 0;
+
+        padding: 20px;
+    }
+
+    .properties {
+
+        padding: 20px;
+    }
+
+    footer {
+
+        font-size: 14px;
+    }
+}
+
+
+/*project 
+
+/* ==================================
+   UNIVERSAL SELECTOR
+   ================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==================================
+   BODY
+   ================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+    color: #1e293b;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================
+   HEADER
+   ================================== */
+
+header {
+    width: 100%;
+    min-height: 650px;
+    padding: 20px 6%;
+    background-color: #1d4ed8;
+    color: white;
+}
+
+
+/* ==================================
+   NAVIGATION
+   ================================== */
+
+.navbar {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #60a5fa;
+}
+
+.navbar h1 {
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #bfdbfe;
+}
+
+
+/* ==================================
+   HERO
+   ================================== */
+
+.hero {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+
+    min-height: 550px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.welcome {
+    color: #bfdbfe;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.hero-content h2 {
+    font-size: 52px;
+
+    line-height: 1.2;
+
+    margin-bottom: 15px;
+}
+
+.hero-content h2 span {
+    color: #facc15;
+}
+
+.hero-content h3 {
+    font-size: 22px;
+
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.welcome) {
+    max-width: 600px;
+
+    color: #dbeafe;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==================================
+   BUTTON
+   ================================== */
+
+.btn,
+.submit-btn {
+    display: inline-block;
+
+    background-color: #facc15;
+
+    color: #172554;
+
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.btn:hover,
+.submit-btn:hover {
+    background-color: #fde68a;
+}
+
+
+/* ==================================
+   HERO IMAGE
+   ================================== */
+
+.hero-image {
+    width: 350px;
+
+    height: 350px;
+
+    padding: 10px;
+
+    border: 5px solid #bfdbfe;
+
+    border-radius: 50%;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* ==================================
+   COMMON SECTION
+   ================================== */
+
+.section {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 60px 8%;
+
+    background-color: white;
+    border: none;
+    border-radius: 0;
+
+    box-shadow: none;
+}
+
+.section-title {
+    text-align: center;
+
+    color: #1d4ed8;
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+}
+
+
+/* ==================================
+   ABOUT
+   ================================== */
+
+.about-box {
+    max-width: 850px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: #eff6ff;
+
+    border-left: 5px solid #2563eb;
+
+    border-radius: 10px;
+}
+
+.about-box p {
+    margin-bottom: 15px;
+}
+
+
+/* ==================================
+   FLEXBOX - SKILLS
+   ================================== */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    flex: 1 1 200px;
+
+    padding: 25px;
+
+    background-color: #eff6ff;
+
+    border: 2px solid #bfdbfe;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.1);
+}
+
+.skill-card h3 {
+    color: #2563eb;
+
+    margin-bottom: 10px;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 20px rgba(30, 64, 175, 0.2);
+}
+
+
+/* ==================================
+   GRID - PROJECTS
+   ================================== */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.project-card {
+    padding: 30px;
+
+    min-height: 220px;
+
+    background-color: #f8fafc;
+
+    border: 2px solid #dbeafe;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(30, 64, 175, 0.1);
+}
+
+.project-card h3 {
+    color: #1d4ed8;
+
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+
+/* ==================================
+   EDUCATION TABLE
+   ================================== */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+
+    border: 1px solid #bfdbfe;
+
+    text-align: left;
+}
+
+th {
+    background-color: #1d4ed8;
+
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eff6ff;
+}
+
+
+/* ==================================
+   FORM
+   ================================== */
+
+.registration-form {
+    max-width: 700px;
+
+    margin: auto;
+
+    padding: 30px;
+
+    background-color: #eff6ff;
+
+    border: 2px solid #bfdbfe;
+
+    border-radius: 12px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #1e3a8a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #93c5fd;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid #2563eb;
+}
+
+
+/* ==================================
+   FOOTER
+   ================================== */
+
+footer {
+    text-align: center;
+
+    background-color: #172554;
+
+    color: white;
+
+    padding: 35px;
+
+    margin-top: 50px;
+}
+
+footer h3 {
+    color: #facc15;
+
+    margin-bottom: 8px;
+}
+
+
+/* ==================================
+   TABLET
+   ================================== */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 5%;
+
+        min-height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 0;
+
+        min-height: auto;
+    }
+
+    .hero-content h2 {
+        font-size: 40px;
+    }
+
+    .hero-image {
+        width: 280px;
+
+        height: 280px;
+    }
+
+    .section {
+        width: 94%;
+
+        padding: 30px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills-container {
+        gap: 15px;
+    }
+}
+
+
+/* ==================================
+   MOBILE
+   ================================== */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px 4%;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 40px 0;
+
+        gap: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+    }
+
+    .hero-content h3 {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        width: 210px;
+
+        height: 210px;
+    }
+
+    .section {
+        width: 94%;
+
+        margin: 30px auto;
+
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    /* Flexbox becomes one column */
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    /* Grid becomes one column */
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: auto;
+    }
+
+    .registration-form {
+        padding: 20px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
